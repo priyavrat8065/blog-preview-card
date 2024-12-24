@@ -19,10 +19,12 @@ html {
   --color-grey-950: #111111;
   --color-grey-500: #6b6b6b;
   --color-bg-card: #ffffff;
-  --ft-sz-1: 800 2rem/1.5 "Figtree", serif;
+  --ft-sz-1: 800 2.4rem/1.5 "Figtree", serif;
   --ft-sz-2: 500 1.6rem/1.5 "Figtree", serif;
   --ft-sz-3: 400 1.4rem/1.5 "Figtree", serif;
   --ft-sz-4: 800 1.2rem/1.5 "Figtree", serif;
+  --ft-sz-5: 800 2rem/1.5 "Figtree", serif;
+  --ft-sz-6: 800 1.4rem/1.5 "Figtree", serif;
 }
 /* GENERAL CSS CODE */
 body {
@@ -48,7 +50,7 @@ body {
   width: max-content;
   padding: 0.4rem 0.8rem;
   background: var(--color-bg);
-  font: var(--ft-sz-4);
+  font: var(--ft-sz-6);
   color: var(--color-grey-950);
   line-height: inherit;
   border-radius: 4px;
@@ -64,7 +66,7 @@ body {
   color: var(--color-grey-500);
 }
 .card-body header p {
-  font: var(--ft-sz-4);
+  font: var(--ft-sz-3);
   font-weight: 400;
 }
 .card-bottom p {
@@ -98,4 +100,18 @@ body {
 .card-body a:hover,
 .card-body a:focus {
   color: var(--color-bg);
+}
+@media screen and (max-width:424px) {
+  .card-body header p {
+    font: var(--ft-sz-4)
+  }
+  .card-body main a {
+    font: var(--ft-sz-5)
+  }
+  .card-body main p {
+    font:var(--ft-sz-3)
+  }
+  .category {
+    font: var(--ft-sz-4)
+  }
 }
