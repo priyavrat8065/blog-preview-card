@@ -13,4 +13,8 @@ html {
   --color-grey-950: #111111;
   --color-grey-500: #6b6b6b;
   --color-bg-card: #ffffff;
+  --ft-sz-1: 800 2.4rem "Figtree", sans-serif;
+  --ft-sz-2: 500 1.6rem "Figtree", sans-serif;
+  --ft-sz-3: 500 1.4rem "Figtree", sans-serif;
+  --ft-sz-4: 800 1.4rem "Figtree", sans-serif;
 }
