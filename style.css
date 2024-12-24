@@ -21,7 +21,7 @@ html {
   --ft-sz-1: 800 2.4rem "Figtree", sans-serif;
   --ft-sz-2: 500 1.6rem "Figtree", sans-serif;
   --ft-sz-3: 500 1.4rem "Figtree", sans-serif;
-  --ft-sz-4: 800 1.4rem "Figtree", sans-serif;
+  --ft-sz-4: 800 1.2rem "Figtree", sans-serif;
 }
 /* GENERAL CSS CODE */
 body {
@@ -42,4 +42,14 @@ body {
 }
 .card.wrapper {
   max-width: 38.4rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--color-bg);
+  text-decoration: none;
+  font: var(--ft-sz-4);
+  color: var(--color-grey-950);
+  line-height: inherit;
+  border-radius: 4px;
 }
