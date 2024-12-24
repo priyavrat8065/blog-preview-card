@@ -33,7 +33,13 @@ body {
   min-height: 100vh;
   padding: 2.4rem;
 }
+/* STYLE CARD */
 .card {
   background: var(--color-bg-card);
   padding: 2.4rem;
+  border-radius: 20px;
+  box-shadow: 8px 8px var(--color-grey-950);
+}
+.card.wrapper {
+  max-width: 38.4rem;
 }
