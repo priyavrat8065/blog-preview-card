@@ -68,3 +68,17 @@ body {
 .card-bottom p {
   font: var(--ft-sz-4);
 }
+/* POSITIONING THE CONTENT INSIDE THE CARD */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.mb {
+  margin-bottom: 1.2rem;
+}
+.card-bottom figure {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
