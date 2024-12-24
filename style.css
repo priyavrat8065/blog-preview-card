@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 /* CSS RESET CODE */
 * {
   margin: 0;
@@ -18,10 +19,10 @@ html {
   --color-grey-950: #111111;
   --color-grey-500: #6b6b6b;
   --color-bg-card: #ffffff;
-  --ft-sz-1: 800 2.4rem "Figtree", sans-serif;
-  --ft-sz-2: 500 1.6rem "Figtree", sans-serif;
-  --ft-sz-3: 500 1.4rem "Figtree", sans-serif;
-  --ft-sz-4: 800 1.2rem "Figtree", sans-serif;
+  --ft-sz-1: 800 2rem "Figtree", serif;
+  --ft-sz-2: 500 1.6rem "Figtree", serif;
+  --ft-sz-3: 400 1.4rem "Figtree", serif;
+  --ft-sz-4: 800 1.2rem "Figtree", serif;
 }
 /* GENERAL CSS CODE */
 body {
@@ -52,4 +53,18 @@ body {
   color: var(--color-grey-950);
   line-height: inherit;
   border-radius: 4px;
+}
+.card-body h1 {
+  font: var(--ft-sz-1);
+}
+.card-body main p {
+  font: var(--ft-sz-3);
+  color: var(--color-grey-500);
+}
+.card-body header p {
+  font: var(--ft-sz-4);
+  font-weight: 400;
+}
+.card-bottom p {
+  font: var(--ft-sz-4);
 }
