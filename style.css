@@ -91,3 +91,11 @@ body {
 .illustration-img {
   border-radius: 10px;
 }
+/* ADD HOVER, FOCUS and VISITED STATE */
+.card-body a:visited {
+  color: var(--color-grey-950);
+}
+.card-body a:hover,
+.card-body a:focus {
+  color: var(--color-bg);
+}
