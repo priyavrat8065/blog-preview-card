@@ -44,18 +44,20 @@ body {
 .card.wrapper {
   max-width: 38.4rem;
 }
-.btn {
-  display: inline-block;
+.category {
+  width: max-content;
   padding: 0.4rem 0.8rem;
   background: var(--color-bg);
-  text-decoration: none;
   font: var(--ft-sz-4);
   color: var(--color-grey-950);
   line-height: inherit;
   border-radius: 4px;
 }
-.card-body h1 {
+.card-body a {
   font: var(--ft-sz-1);
+  text-decoration: none;
+  color: var(--color-grey-950);
+  display: inline-block;
 }
 .card-body main p {
   font: var(--ft-sz-3);
