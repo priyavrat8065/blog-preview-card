@@ -25,6 +25,7 @@ html {
   --ft-sz-4: 800 1.2rem/1.5 "Figtree", serif;
   --ft-sz-5: 800 2rem/1.5 "Figtree", serif;
   --ft-sz-6: 800 1.4rem/1.5 "Figtree", serif;
+  --ft-sz-7: 400 1.2rem/1.5 "Figtree", serif;
 }
 /* GENERAL CSS CODE */
 body {
@@ -101,17 +102,17 @@ body {
 .card-body a:focus {
   color: var(--color-bg);
 }
-@media screen and (max-width:424px) {
+@media screen and (max-width: 424px) {
   .card-body header p {
-    font: var(--ft-sz-4)
+    font: var(--ft-sz-7);
   }
   .card-body main a {
-    font: var(--ft-sz-5)
+    font: var(--ft-sz-5);
   }
   .card-body main p {
-    font:var(--ft-sz-3)
+    font: var(--ft-sz-3);
   }
   .category {
-    font: var(--ft-sz-4)
+    font: var(--ft-sz-4);
   }
 }
