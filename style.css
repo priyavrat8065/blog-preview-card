@@ -19,14 +19,13 @@ html {
   --color-grey-950: #111111;
   --color-grey-500: #6b6b6b;
   --color-bg-card: #ffffff;
-  --ft-sz-1: 800 2rem "Figtree", serif;
-  --ft-sz-2: 500 1.6rem "Figtree", serif;
-  --ft-sz-3: 400 1.4rem "Figtree", serif;
-  --ft-sz-4: 800 1.2rem "Figtree", serif;
+  --ft-sz-1: 800 2rem/1.5 "Figtree", serif;
+  --ft-sz-2: 500 1.6rem/1.5 "Figtree", serif;
+  --ft-sz-3: 400 1.4rem/1.5 "Figtree", serif;
+  --ft-sz-4: 800 1.2rem/1.5 "Figtree", serif;
 }
 /* GENERAL CSS CODE */
 body {
-  line-height: 1.5;
   background: var(--color-bg);
   display: flex;
   justify-content: center;
@@ -61,7 +60,7 @@ body {
   display: inline-block;
 }
 .card-body main p {
-  font: var(--ft-sz-3);
+  font: var(--ft-sz-2);
   color: var(--color-grey-500);
 }
 .card-body header p {
