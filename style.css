@@ -7,3 +7,10 @@
 html {
   font-size: 62.5%;
 }
+/* CSS VARIABLES */
+:root {
+  --color-bg: #f4d04e;
+  --color-grey-950: #111111;
+  --color-grey-500: #6b6b6b;
+  --color-bg-card: #ffffff;
+}
