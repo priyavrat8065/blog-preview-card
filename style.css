@@ -82,3 +82,10 @@ body {
   align-items: center;
   gap: 1.2rem;
 }
+/* CSS IMAGE */
+.author-image {
+  width: 32px;
+}
+.illustration-img {
+  border-radius: 10px;
+}
