@@ -44,13 +44,13 @@ html {
   --color-grey-950: #111111;
   --color-grey-500: #6b6b6b;
   --color-bg-card: #ffffff;
-  --ft-sz-1: 800 2.4rem/1.5 "Figtree", serif;
-  --ft-sz-2: 500 1.6rem/1.5 "Figtree", serif;
-  --ft-sz-3: 400 1.4rem/1.5 "Figtree", serif;
-  --ft-sz-4: 800 1.2rem/1.5 "Figtree", serif;
-  --ft-sz-5: 800 2rem/1.5 "Figtree", serif;
-  --ft-sz-6: 800 1.4rem/1.5 "Figtree", serif;
-  --ft-sz-7: 400 1.2rem/1.5 "Figtree", serif;
+  --ft-sz-1: 2.4rem;
+  --ft-sz-2: 1.6rem;
+  --ft-sz-3: 1.4rem;
+  --ft-sz-4: 1.2rem;
+  --ft-sz-5: 2rem;
+  --ft-sz-6: 1.4rem;
+  --ft-sz-7: 1.2rem;
 }
 /* GENERAL CSS CODE */
 
@@ -61,6 +61,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 2.4rem;
+  font-family: "Figtree", serif;
 }
 /* STYLE CARD */
 .card {
@@ -77,27 +78,38 @@ body {
   width: max-content;
   padding: 0.4rem 0.8rem;
   background: var(--color-bg);
-  font: var(--ft-sz-6);
+  font-size: var(--ft-sz-4);
+  font-size: clamp(var(--ft-sz-4), 1.13rem + 0.19vw, var(--ft-sz-3));
   color: var(--color-grey-950);
-  line-height: inherit;
+  line-height: 1.5;
   border-radius: 4px;
+  font-weight: 800;
 }
 .card-body a {
   font: var(--ft-sz-1);
+  font-size: var(--ft-sz-5);
+  font-size: clamp(var(--ft-sz-5), 1.86rem + 0.38vw, var(--ft-sz-1));
   text-decoration: none;
   color: var(--color-grey-950);
   display: inline-block;
+  font-weight: 800;
+  line-height: 1.5;
 }
 .card-body main p {
-  font: var(--ft-sz-2);
+  font-size: var(--ft-sz-3);
+  font-size: clamp(var(--ft-sz-3), 1.33rem + 0.19vw, var(--ft-sz-2));
   color: var(--color-grey-500);
+  line-height: 1.5;
 }
 .card-body header p {
-  font: var(--ft-sz-3);
+  font-size: var(--ft-sz-4);
+  font-size: clamp(var(--ft-sz-4), 1.13rem + 0.19vw, var(--ft-sz-3));
   font-weight: 400;
+  line-height: 1.5;
 }
 .card-bottom p {
-  font: var(--ft-sz-4);
+  font-size: var(--ft-sz-4);
+  font-weight: 800;
 }
 /* POSITIONING THE CONTENT INSIDE THE CARD */
 .card {
@@ -127,18 +139,4 @@ body {
 .card-body a:hover,
 .card-body a:focus {
   color: var(--color-bg);
-}
-@media screen and (max-width: 424px) {
-  .card-body header p {
-    font: var(--ft-sz-7);
-  }
-  .card-body main a {
-    font: var(--ft-sz-5);
-  }
-  .card-body main p {
-    font: var(--ft-sz-3);
-  }
-  .category {
-    font: var(--ft-sz-4);
-  }
 }
